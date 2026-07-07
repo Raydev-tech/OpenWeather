@@ -1,7 +1,9 @@
 import React from "react";
 
 export const ForecastCard = ({ data, unit }) => {
+
   const date = new Date(data.dt * 1000);
+  
   const day = date.toLocaleDateString("en-US", { weekday: "short" });
 
   return (
